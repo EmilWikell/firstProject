@@ -28,21 +28,19 @@ public class ovn1c {
             if (lastName != null) {
                 output += " " + lastName;
             }
-        }
-        else if(lastName != null){
+        } else if(lastName != null){
             output += lastName;
-        }
-        else{
+        } else{
             output += "Guest";
         }
+
         if (luckyType.equals("animal")){
-            output += "" + luckyAnimal();
-        }
-        else if(luckyType.equals("number")){
+            output += " your lucky animal is " + luckyAnimal();
+        } else if(luckyType.equals("number")){
             output += " , your lucky number is " + String.valueOf(luckyNumber());
-        }
-        else{
+        } else{
             output += " ,You have to enter a luckyType!";
         }
+        return output;
     }
 }
