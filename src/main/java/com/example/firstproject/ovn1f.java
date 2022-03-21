@@ -18,8 +18,5 @@ public class ovn1f {
     public List<Integer> luckyNumber(List<Integer> unluckyList) {
         List<Integer> toTen = List.of(1,2,3,4,5,6,7,8,9,10);
         return toTen.stream().filter(integer -> !unluckyList.contains(integer)).collect(Collectors.toList());
-//        for (int i = 1; i <= 10; i++) {
-
-   //     }
     }
 }
